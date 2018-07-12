@@ -12,7 +12,7 @@ X           data tensor                        (sptensor)
 
 Y           data matrix
 
-J and JM    the nRankf of Tensor and Matrix             (double)
+J and JM    the Rank of Tensor and Matrix             (double)
 
 U and UM        Initialization of factor matrices  (cell)
 
