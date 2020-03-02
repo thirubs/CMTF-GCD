@@ -4,12 +4,20 @@ function [U, total_var_updates, total_grad_updates,updated_variable] = CMTF_GCD(
 % This implementation can be used for only 3-order tensor with 1 matrix
 % shared in mode1. 
 
+% Note: You should have Matlab tensor toolbox library to run this.
+%% Citation:
+% If you use this code, cite any of the following paper
+% 1. Balasubramaniam, Thirunavukarasu, Nayak, Richi, & Yuen, Chau. "Nonnegative coupled matrix tensor factorization for smart city spatiotemporal pattern mining." In International Conference on Machine Learning, Optimization, and Data Science,  pp. 520-532. Springer, Cham, 13-16 September 2018, Pisa, Italy 2018. 
+
+% 2. Balasubramaniam, Thirunavukarasu, Nayak, Richi, & Yuen, Chau. "People to people recommendation using coupled nonnegative Boolean matrix factorization. In IEEE International Conference on Soft-Computing and Network Security, 14-16 February 2018, Coimbatore, India. 
+
+
 %%
 % [Input]
 % X           data tensor                        (sptensor)
 % Y           data matrix
 % J and JM    the nRankf of Tensor and Matrix             (double)
-% U           Initialization of factor matrices  (cell)
+% U , UM          Initialization of factor matrices  (cell)
 % maxiters     the numer of iterations            
 % [Output]
 % U        the factorization result             (ktensor)
